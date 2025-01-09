@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <title> login</title>
+        <style>
+input[type=text], input[type=password] {
+  width: 300px;
+  height: 30px;
+  padding: 12px 20px;
+  margin-top: 8px 8px;
+  display: inline-block;
+  font-size: 15px;
+  border: 1px solid #7bfc62;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+button{
+    background-color:rgb(252, 250, 248);
+    border: 3px solid rgb(151, 247, 151);
+        animation: glow1 0.68s linear infinite;
+        border-radius: 25px;
+}
+.container{
+    width: 100%;
+    position: absolute;
+    padding-top: 60px;
+    transform: translateY(-50);
+    text-align: center;
+    color: bisque;
+}
+button:hover{
+    background-color:rgb(87, 250, 95);
+}
+            .banner1{
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(1, 27, 0, 0.75)),url(dairy1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.material-symbols-outlined{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #ff0000;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+}
+#bn{
+    background-color: transparent;
+    border: none;
+    padding-left: 60px;
+}
+.navb h2{
+    display: flex;
+    color: bisque;
+    text-align: center;
+    padding-left: 43%;
+    font-size: 40px;
+    text-decoration: underline;
+}
+        </style>
+    </head>
+    <body>
+       
+        <div class="banner1"> 
+            <div class="navb">
+            <h2>DK Dairy</h2>
+            <button onclick="showpag()" id="bn">
+            <span class="material-symbols-outlined">
+                close
+                </span>
+
+            </button>
+            </div>
+        <div class="container">
+            <label for="name" style="color:rgb(244, 244, 247);font-size: 17px; padding-right: 260px;">UserName</label>
+            <br>
+            <br>
+            <input type="text" name="name" placeholder="UserName" style="font-size: 15px;" required>
+            <br>
+            <br>
+            <label for="name" style="color:rgb(250, 250, 252) ; font-size: 17px;padding-right: 260px;">Passsword</label>
+            <br>
+            <br>
+            <input type="password" name="psw" placeholder="password" maxlength="15" style="font-size: 15px;" required>
+            <br>
+            <br>
+            <br>
+            <button style="width: 90px;height:30px; size: 30px;font-size: 13px; rgb(2, 0, 10); color:rgb(1, 4, 20)">Login</button>
+        </div>
+</div>
+<script src="accnt.js"></script>
+    </body>
+</html>
